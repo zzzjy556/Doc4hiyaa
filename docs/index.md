@@ -1,13 +1,13 @@
 ---
 layout: home
 
-title: 库苏恩
-titleTemplate: 一键虚拟化项目
-tagline: 开源、易于使用的服务器虚拟化项目
+title: hiyaa的个人文档
+titleTemplate: hiyaa的个人文档
+tagline: 个人在编程学习和使用过程中记录的笔记
 
 hero:
-  name: 一键虚拟化项目
-  text: 开源、易于使用的服务器虚拟化项目
+  name: hiyaa的个人文档
+  text: 个人在编程学习和使用过程中记录的笔记
   image: https://cdn.spiritlhl.net/https://raw.githubusercontent.com/spiritlhls/pages/main/logo.png
   actions:
     - theme: brand
