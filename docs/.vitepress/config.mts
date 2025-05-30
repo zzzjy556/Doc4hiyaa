@@ -15,7 +15,7 @@ export default defineConfig({
         lastmod: pageData.lastUpdated ?? Date.now(),
       });
     }
-  },
+  }, 
   buildEnd: async ({ outDir }) => {
     const sitemap = new SitemapStream({
       hostname: 'https://www.hiyaa4402.top/'
@@ -33,8 +33,8 @@ export default defineConfig({
     root: {
       lang: 'zh-CN',
       label: '简体中文',
-      title: '一键虚拟化项目',
-      description: '开源、易于使用的服务器虚拟化项目',
+      title: 'hiyaa的个人文档',
+      description: '个人在编程学习和使用过程中记录的笔记',
       link: '/',
       themeConfig: {
         logo: { src: 'https://cdn.spiritlhl.net/https://raw.githubusercontent.com/spiritlhls/pages/main/logo.png' },
@@ -45,23 +45,23 @@ export default defineConfig({
         },
         nav: [
           {
-            text: '一键虚拟化项目',
+            text: 'Java',
             link: '/',
             activeMatch: '^/$|^/guide/'
           },
           {
-            text: '其他虚拟化项目',
+            text: 'Mysql',
             link: '/incomplete/index',
             activeMatch: '^/incomplete/'
           },
           {
-            text: '其他实用项目',
+            text: '代码片段',
             link: '/case/index',
             activeMatch: '^/case/'
           },
-          { text: 'AList', link: 'https://storage.spiritlhl.net/' },
-          { text: 'VPS余量监控', link: 'https://spiders.spiritlhl.net/' },
-          { text: 'VPS测试存档', link: 'https://beta.spiritlhl.net/' }
+          // { text: 'AList', link: 'https://storage.spiritlhl.net/' },
+          // { text: 'VPS余量监控', link: 'https://spiders.spiritlhl.net/' },
+          // { text: 'VPS测试存档', link: 'https://beta.spiritlhl.net/' }
         ],
         sidebar: {
           '/': getGuideSidebarZhCN(),
@@ -70,13 +70,13 @@ export default defineConfig({
           '/incomplete/': getIncompleteSidebarZhCN(),
           '/developer/': getDeveloperSidebarZhCN(),
         }
-      }
+      } 
     },
     en: {
       lang: 'en-US',
       label: 'English',
-      title: 'One Click Virtualization',
-      description: 'Open source, easy to use server virtualization project',
+      title: 'Personal Doc For hiyaa',
+      description: 'Notes recorded by an individual during the process of learning and using programming.',
       link: '/en/',
       themeConfig: {
         logo: { src: 'https://cdn.spiritlhl.net/https://raw.githubusercontent.com/spiritlhls/pages/main/logo.png' },
@@ -86,11 +86,16 @@ export default defineConfig({
           pattern: 'https://github.com/oneclickvirt/oneclickvirt.github.io/edit/main/docs/:path',
         },
         nav: [
-          { text: 'One Click Virtualization', link: '/en/', activeMatch: '^/en/guide/' },
-          { text: 'Other Virtualization Projects', link: '/en/incomplete/index', activeMatch: '^/en/incomplete/' },
-          { text: 'AList', link: 'https://storage.spiritlhl.net/' },
-          { text: 'VPS Stock Monitor', link: 'https://spiders.spiritlhl.net/' },
-          { text: 'VPS Test Archive', link: 'https://beta.spiritlhl.net/' }
+          { text: 'Java', link: '/en/', activeMatch: '^/en/guide/' },
+          { text: 'Mysql', link: '/en/incomplete/index', activeMatch: '^/en/incomplete/' },
+           {
+            text: 'Code Snippet',
+            link: '/case/index',
+            activeMatch: '^/case/'
+          },
+          // { text: 'AList', link: 'https://storage.spiritlhl.net/' },
+          // { text: 'VPS Stock Monitor', link: 'https://spiders.spiritlhl.net/' },
+          // { text: 'VPS Test Archive', link: 'https://beta.spiritlhl.net/' }
         ],
         sidebar: {
           '/en/': getGuideSidebarEnUS(),
