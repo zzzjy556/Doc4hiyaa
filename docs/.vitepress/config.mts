@@ -109,7 +109,7 @@ export default defineConfig({
   },
   themeConfig: {
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/oneclickvirt/oneclickvirt.github.io' }
+      { icon: 'github', link: 'https://github.com/zzzjy556/zzzjy556.github.io' }
     ],
     algolia: {
       appId: 'K1R85MDU0C',
